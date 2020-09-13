@@ -12,8 +12,16 @@ public class ItcljController {
     @Value("${itclj.param1}")
     private String parma1;
 
+    @Value("${itclj.param2}")
+    private String param2;
+
     @GetMapping("/param1")
     public String getParma1(){
         return parma1;
+    }
+
+    @GetMapping("/param2")
+    public String getParam2(){
+        return param2;
     }
 }
