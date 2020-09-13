@@ -55,6 +55,13 @@ password: itclj@2020
 aasHt8cBXKGu17lrbwbc6Q==
 ```
 
+- 所有明文密码替换为ENC(加密字符串)，例如ENC(XW2daxuaTftQ+F2iYPQu0g==)；
+
+- 修改启动参数
+```shell script
+-Djasypt.encryptor.password=itclj@2020 -Dspring.config.location=D:\workspace_idea\spring-boot-jasypt-demo\docs\itclj-sit.properties
+```
+
 ```shell script
 ## jasypt 加密后的参数
 http://127.0.0.1:8080/itclj/param2
